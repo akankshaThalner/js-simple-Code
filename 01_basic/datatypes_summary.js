@@ -18,7 +18,7 @@ object
 
 
 */
-
+/*
 const id1 = Symbol('123');
 const id2= Symbol('123');
 console.log(id1===id2);//false
@@ -52,7 +52,7 @@ console.log(typeof bi);
 //1111111111n
 //bigin
 
-/*
+
 
 function
 [Function: myFunction]
@@ -67,3 +67,29 @@ Symbol(123)
 object
 null
 */
+
+
+//how many type of memory ?
+//1]stack - store primary data type
+//(pass copy of data  org not change)
+//2]heap - store reference data type 
+//(pass reference i=of data org change)
+
+
+let myYouthubename = "one"
+
+let myanotherYouthubename = "two"
+myanotherYouthubename="three"
+console.log( myYouthubename )
+console.log( myanotherYouthubename);
+
+
+let userOne={
+    email :"user@googel.com",
+    upi:"user@upi"
+}
+let userTwo = userOne
+
+userTwo.email="gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
